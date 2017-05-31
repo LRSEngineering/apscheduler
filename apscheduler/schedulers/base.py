@@ -6,7 +6,10 @@ from datetime import datetime
 from logging import getLogger
 import sys
 
-from pkg_resources import iter_entry_points
+try:
+    from pkg_resources import iter_entry_points
+except ImportError:
+    iter_entry_points = iter(())
 from tzlocal import get_localzone
 import six
 
