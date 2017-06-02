@@ -9,7 +9,8 @@ import sys
 try:
     from pkg_resources import iter_entry_points
 except ImportError:
-    iter_entry_points = iter(())
+    def iter_entry_points(name):
+        return iter(())
 from tzlocal import get_localzone
 import six
 
