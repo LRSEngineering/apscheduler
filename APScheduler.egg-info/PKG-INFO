@@ -1,4 +1,4 @@
-Metadata-Version: 1.1
+Metadata-Version: 1.0
 Name: APScheduler
 Version: 3.1.0
 Summary: In-process task scheduler with Cron-like capabilities
